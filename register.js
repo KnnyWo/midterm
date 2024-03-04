@@ -1,23 +1,24 @@
-console.log("Hello World.", 43, 408.33, true, false, ["saging", 44, true]);
-console.log(typeof("Hello World."), typeof(34234), typeof(["saging"]))
+console.log("Hello World. ", 43, 409.23, true, false, ["banana", 43, true]);
 
-//string = "asd", "KnnyWo", "234"
-//NUmber = 12345, 40.2, 60.4
-//boolean = true, false
+console.log(typeof ("Hello World. "), typeof(34243), typeof(["banana"]))
+
+// string = "asd", "shshshhshs", "696"
+// number = 12345, 40.2, 60.4
+// booloean = true, false
 // object = Array [], JSON {...}
 
-let btnRegister = documents.querySelector("#btnRegister");
-let txtUsername = documents.querySelector("#txtUsername");
+let btnRegister = document.querySelector("#btnRegister");
+let txtUsername = document.querySelector("#txtUsername");
 let txtPassword = document.querySelector("#txtPassword");
-let txtConfirmPassword = document.querySelector("#txtComfirmPassword");
+let txtConfirmPassword = document.querySelector("#txtConfirmPassword");
 let txtAge = document.querySelector("#txtAge");
 
 btnRegister.onclick = function(){ 
-    register(txtUsername.value);
+    register(txtUsername.value, txtPassword.value, txtConfirmPassword.value, txtAge.value);
 }
 
 function register (username, password, confirmPassword, age) {
-    alert(username);
+    console.log(username, password, confirmPassword, age);
     //alert("Register button has been clicked.")
 
 }
